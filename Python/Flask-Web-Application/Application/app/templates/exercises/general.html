@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block script %}
+
+<script type="text/javascript">
+/*
+ * Response data
+ */
+var data_items = [
+    {%- for key, value in data.iteritems() %}
+    ['{{ key.title() }}', {{ value }}],
+    {%- endfor %}           
+];
+
+var type_chart = 'column';
+
+require(['pags/main.charts']);
+</script>
+
+
+{% endblock %}
+
+{% set wrapper_type = "-chart" %}
+
+
+{% block content %}
+    <!-- Include more content here or below the chart, using Flask / Jinja. -->
+    <h1>General exercises since the begin</h1>
+    <div id="chart"></div>
+{% endblock %}
+
+
+{% block footer %}
+    <a class="bt-action bt-action-home" href="{{ url_for('index') }}">
+        <span>Home</span>
+    </a>
+
+    {% if not session.user_id %}
+        <a class="bt-action bt-action-user" href="{{ url_for('users.login') }}">
+            <span>Login</span>
+        </a>
+    {% else %}
+        <a class="bt-action bt-action-user" href="{{ url_for('users.index') }}">
+            <span>Profile</span>
+        </a>
+    {% endif %}
+{% endblock %}

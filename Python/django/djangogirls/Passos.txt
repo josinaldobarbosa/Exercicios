@@ -1,0 +1,32 @@
+Source: http://tutorial.djangogirls.org/pt/
+
+// Introducao
+
+- rodar servidor: python manage.py runserver(pode-se usar o virtual env)
+- criar um login: python manage.py createsuperuser(admin | qwe12345)
+- cria um app: python manage.py createapp {nome do app}
+- adicionar em mysite/settings.py/INSTALLED_APPS o {nome do app}
+- criar um modelo no {nome do app}
+- python manage.py makemigrations {nome do app}
+- python manage.py migrate {nome do app}
+- registrar em {nome do app}/admin.py o modelo
+
+// Utilizando o shell
+
+> Abre o shell: python manage.py shell
+>>> Importa o modelo Post: from blog.models import Post
+>>> Exibe todos os objetos de Post: Post.objects.all()
+>>> Importa o modelo de usuarios: from django.contrib.auth.models import User
+>>> Exibe usuarios: User.objects.all()
+>>> Atribui um usuario a uma variavel: {nome variavel} = User.objects.get(username='{nome usuario}')
+>>> Cria um Post: Post.objects.create(author={nome variavel}, title='Sample title', text='Test')
+>>> Exibe todos os Post's criados: Post.objects.all()
+>>> QuerySet filter por author: Post.objects.filter(author=me)
+>>> QuerySet contains por titulo: Post.objects.filter(title__contains='title')
+>>> Exibe todos os Post's publicados: from django.utils import timezone
+                                      Post.objects.filter(published_date__lte=timezone.now())
+>>> Atribui a uma varivavel um Post: post = Post.objects.get(id={index do post})
+>>> Publica um Post pela variavel: post.publish()
+>>> Ordena lista pelo created_date: Post.objects.order_by('created_date')
+>>> Inverte a ordem de ordenacao: Post.objects.order_by('-created_date')
+>>> fecha terminal: exit()

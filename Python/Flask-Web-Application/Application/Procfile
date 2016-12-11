@@ -1,0 +1,1 @@
+web: python initialize_app_heroku.py

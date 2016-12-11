@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Alunos>
+  <Aluno>
+    <Matricula>1</Matricula>
+    <Nome>Arianna</Nome>
+    <Sobrenome>Lima</Sobrenome>
+    <CodigoCurso>G306</CodigoCurso>
+    <NomeCurso>Fundamentos do Gerenciamento de Projetos</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>2</Matricula>
+    <Nome>Arthur</Nome>
+    <Sobrenome>Daher</Sobrenome>
+    <CodigoCurso>G309</CodigoCurso>
+    <NomeCurso>Desenvolvimento de Competências em Gerenciamento de Projetos</NomeCurso>
+    <StatusCurso>0</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>3</Matricula>
+    <Nome>Bernardo</Nome>
+    <Sobrenome>Silveira</Sobrenome>
+    <CodigoCurso>G308</CodigoCurso>
+    <NomeCurso>Preparatório Intensivo para Certificação PMP</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>4</Matricula>
+    <Nome>Breno</Nome>
+    <Sobrenome>Alves</Sobrenome>
+    <CodigoCurso>I706</CodigoCurso>
+    <NomeCurso>Microsoft Project 2013</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>5</Matricula>
+    <Nome>Bruno</Nome>
+    <Sobrenome>Ferreira</Sobrenome>
+    <CodigoCurso>G400</CodigoCurso>
+    <NomeCurso>ITIL Foundations</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>6</Matricula>
+    <Nome>Caio</Nome>
+    <Sobrenome>Bravo</Sobrenome>
+    <CodigoCurso>G500</CodigoCurso>
+    <NomeCurso>COBIT Foundations</NomeCurso>
+    <StatusCurso>0</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>7</Matricula>
+    <Nome>Caio</Nome>
+    <Sobrenome>Marinho</Sobrenome>
+    <CodigoCurso>I590</CodigoCurso>
+    <NomeCurso>Projeto de Sistemas e Orientação a Objetos com UML</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>8</Matricula>
+    <Nome>Caique</Nome>
+    <Sobrenome>Bernardo</Sobrenome>
+    <CodigoCurso>M20480</CodigoCurso>
+    <NomeCurso>Programming in HTML5 with JavaScript and CSS3</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>9</Matricula>
+    <Nome>Carlos</Nome>
+    <Sobrenome>Renato</Sobrenome>
+    <CodigoCurso>M20483</CodigoCurso>
+    <NomeCurso>Programming in C#</NomeCurso>
+    <StatusCurso>0</StatusCurso>
+  </Aluno>
+  <Aluno>
+    <Matricula>10</Matricula>
+    <Nome>Carlos</Nome>
+    <Sobrenome>Vinicios</Sobrenome>
+    <CodigoCurso>M20486</CodigoCurso>
+    <NomeCurso>Developing ASP.NET MVC 4 Web Applications</NomeCurso>
+    <StatusCurso>1</StatusCurso>
+  </Aluno>
+</Alunos>

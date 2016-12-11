@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block script %}
+{%- if data %}
+
+
+<script type="text/javascript">
+/*
+ * Response data
+ */
+var data_items = [
+    {%- for key, value in data.iteritems() %}
+    ['{{ key.title() }}', {{ value }}],
+    {%- endfor %}           
+];
+
+var type_chart = 'line';
+
+require(['pags/main.charts']);
+</script>
+
+{%- endif %}
+{% endblock %}
+
+{% set wrapper_type = "-chart" %}
+
+{% block content %}
+	{% from "forms/macros.html" import render_select_search_field %}
+	<form method="POST" action="." class="form">
+		{{ form.csrf_token }}
+		{{ render_select_search_field(form.months, value_button="Generate Chart") }}
+	</form>
+
+	{%- if data %}
+	<hr />
+    <h1>Total exercises I have done on week by months</h1>
+    <div id="chart"></div>
+    {%- endif %}
+{% endblock %}
+
+{% block footer %}
+	<a class="bt-action bt-action-user" href="{{ url_for('users.index') }}">
+		<span>Profile</span>
+	</a>
+{% endblock %}

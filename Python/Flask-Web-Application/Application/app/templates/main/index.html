@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="home-content">
+		<img src="/static/img/fitness.png" alt="Fitness">
+		<br>
+		<span>This is a small application to count the days 
+				a user have done any kind of phisical exercise.</span>
+		<br>
+		<em><strong><a href="https://github.com/maxcnunes/i-sweated-yesterday" target="_blank">
+			More informations on Github page</a></strong></em>
+	</div>
+{% endblock %}
+
+
+{% block footer %}
+
+	{% if not session.user_id %}
+	    <a class="bt-action bt-action-user" href="{{ url_for('users.login') }}">
+	        <span>Login</span>
+	    </a>
+	{% else %}
+	    <a class="bt-action bt-action-user" href="{{ url_for('users.index') }}">
+	        <span>Profile</span>
+	    </a>
+	{% endif %}
+
+
+
+	<a class="bt-action bt-action-chart" href="{{ url_for('exercises.general') }}">
+		<span>General Chart</span>
+	</a>
+{% endblock %}
