@@ -1,4 +1,4 @@
-Exercicios :D
+Exercícios
 ===
 
-Procurais e achareis.
+Repositório de exercícios.
