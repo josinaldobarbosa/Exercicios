@@ -1,0 +1,8 @@
+change in ~/.gitconfig
+
+--------
+
+[alias]
+  st = status
+  ci = commit
+  envia = !git checkout master && git pull && git checkout desenvolvimento && git rebase master && git checkout master && git merge desenvolvimento && git push
